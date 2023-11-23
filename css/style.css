@@ -2,62 +2,111 @@
 
 html,
 body {
-    padding: 0;
     margin: 0;
+    padding: 0;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
 }
 
 * {
     box-sizing: border-box;
-    margin: ;
 }
-header {
-    background-color: antiquewhite;
-    justify-content: center;
-    display: flex;
-    height: 100px;
-}
-header-wrapper {
-    display: flex;
-    width: 90%;
-}
+
 a {
     color: black;
 }
-left-side {
+button {
+    background-color: black;
+    color: white;
+    font-size: 18;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+header {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.wrapper {
+    display: flex;
+    width: 90%;
+}
+
+.left {
     width: 40%;
     display: flex;
     align-items: center;
 }
-left-side ul {
+
+.left ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-left-side ul li {
+
+.left ul li {
     display: inline;
     margin-right: 15px;
-    color: black;
 }
-mid-section {
+
+.mid {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-mid-section img {
+
+.mid img {
     width: 80%;
     height: auto;
 }
-right-side {
-    display: flex;
+
+.right {
     width: 40%;
+    display: flex;
     align-items: center;
     justify-content: end;
     gap: 15px;
 }
-right-side iconify-icon {
-    font-size: 20px;
+
+.right iconify-icon {
+    font-size: 15px;
     cursor: pointer;
+}
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.hero-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.action-call {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.action-call * {
+    margin-bottom: 30px;
+}
+
+.action-call h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.action-call p {
+    line-height: 20px;
+    max-width: 50ch;
 }
